@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  overflow: auto;
+}
+
+div {
+  height: 150px;
+  width: 150px;
+  float: left;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+.um {
+  background-color: coral;
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+}
+
+.dois {
+  background-color: chartreuse;
+  z-index: 0;
+  position: absolute;
+  left: 100px;
+}
+
+.tres {
+  background-color: darkturquoise;
+  z-index: 1;
+  position: absolute;
+  left: 200px;
+}
