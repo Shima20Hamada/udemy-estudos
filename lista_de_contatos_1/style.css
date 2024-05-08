@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-tittle {
+  text-align: center;
+}
+
+.list {
+  background-color: white;
+  overflow-y: scroll;
+  list-style-type: none;
+  height: 300px;
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.list-iten {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 10px 5px 10px 0px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.list-iten:hover {
+  background-color: lightgray;
+}
+
+.list-iten__image > img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 99px;
+  height: 80px;
+  width: 80px;
+  margin: 8px;
+}
+
+.list-iten__content {
+  align-self: baseline;
+  flex-grow: 1;
+  padding: 10px 10px 0px;
+  line-height: 25px;
+}
+
+.list-iten__name {
+  font-weight: bolder;
+}
+
+.list-iten__email {
+  font-size: 12px;
+  color: gray;
+}
+
+.list-iten__actions {
+  padding: 0px 10px;
+  margin-right: 20px;
+  display: none;
+}
+
+.list-iten__actions a {
+  margin-right: 5px;
+}
+
+.list-iten:hover .list-iten__actions {
+  display: flex;
+}
